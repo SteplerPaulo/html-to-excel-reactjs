@@ -32,11 +32,11 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Convert HTML to Excel</h1>
+      <h1>Convert HTML table(s) to Excel</h1>
 
       <input type='file' onChange={(e) => upload(e)} />
       <button style={{ backgroundColor: "green", color: "white" }} onClick={convert}>Convert</button>
-      <hr />
+
       {tmppath && <h3>Uploaded File</h3>}
       {tmppath &&<iframe id="UploadedFile" src={tmppath} width="98%" height="480"/>}
     </div>
